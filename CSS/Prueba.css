@@ -1,0 +1,527 @@
+/* BODY */
+body { 
+ background: #FFFFFF;
+ font-family: sans-serif;
+}
+/* HEADER */
+header{
+    background: #13946E;
+    padding: 10px;
+}
+
+.contenedor-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+
+/* Buscador del header */
+.buscador {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.buscador input {
+    padding: 8px 10px 8px 30px;
+    background-color: #d9d9d9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buscador i {
+    position: absolute;
+    left: 10px;
+    color: #777;
+}
+
+.buscador input:focus{
+    outline: none;
+    border: 1px solid #159A6D;
+    box-shadow: 0 0 5px rgba(21,154,109,0.3);
+}
+
+.iconos{
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
+    color: #c0e2cf;
+}
+
+/* CONTENIDO */
+
+#contenido{
+    background: #d9d9d9;
+    padding: 20px;
+
+    width: 85%;
+    max-width: 800px;
+
+    margin: 20px auto;
+
+    border-radius: 8px;
+}
+
+
+.titulo-productos{
+    border-bottom: 2px solid #b4b4b4;
+    margin-bottom: 20px;
+}
+
+.titulo-productos h2{
+    margin: 0;
+    padding-bottom: 10px;
+    color: #111;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.producto{
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.producto img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.producto h3{
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.estrellas{
+    color: #f5b800;
+    font-size: 20px;
+    margin: 0;
+}
+
+.precio{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+
+.btn-carrito{
+    width: 100%;
+    border: none;
+    background: #13946E;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-carrito:hover{
+    background: #0d7c5a;
+}
+
+.ver-todos{
+    border-top: 2px solid #b4b4b4;
+    margin-top: 20px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.ver-todos a{
+    color: #13946E;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ver-todos a:hover{
+    text-decoration: underline;
+}
+
+/* LOGIN */
+#login{
+    background: #13946E;
+    text-align: center;
+
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.encabezado-login img{
+    width: 80px;
+    margin-bottom: 8px;
+}
+
+.encabezado-login p{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* FORMULARIO */
+
+.formulario-login{
+    width: 90%;
+    max-width: 350px;
+
+    background: #f5f5f5;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+
+    padding: 18px;
+
+    margin: 0 auto;
+
+    position: relative;
+    top: -62px;
+
+    z-index: 10;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+.etiqueta{
+    margin: 0 0 5px 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.formulario-login input{
+    width: 100%;
+    height: 40px;
+
+    margin-bottom: 10px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d3d3d3;
+    background: white;
+
+    box-sizing: border-box;
+
+    font-size: 14px;
+}
+
+.formulario-login input:focus{
+    outline: none;
+    border-color: #13946E;
+}
+
+.formulario-login button{
+    width: 170px;
+    height: 38px;
+
+    border-radius: 5px;
+
+    background: #13946E;
+
+    color: white;
+    border: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.formulario-login button:hover{
+    background: #0f7c5d;
+}
+
+/* Cuadro blanco de login */
+
+#espacio-blanco{
+    background: #f3f3f3;
+    height: 120px;
+    text-align: center;
+}
+
+/* Cuadro blanco de iniciar sesion */
+
+#espacio-blanco-crear-cuenta{
+    background: #f3f3f3;
+    height: 450px;
+    text-align: center;
+}
+
+.registro{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #555;
+    
+}
+
+.registro a{
+    color: #13946E;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.registro a:hover{
+    text-decoration: underline;
+}
+
+/* PANEL ADMIN */
+
+#admin{
+    background:#f5f5f5;
+    padding:20px;
+}
+
+/* ADMIN Seccion administracion  */
+
+#titulo-admin{
+    background: #dff3ea;
+    padding: 10px 20px; 
+}
+
+#titulo-admin h1{
+    margin: 0;
+    font-size: 24px;
+    color:#1f3d39;
+}
+
+#titulo-admin p{
+    margin: 3px 0 0 0;
+    font-size: 14px;
+    color:#616161;
+}
+
+.encabezado-admin{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.encabezado-admin i{
+    font-size: 20px;
+    color: #13946E;
+}
+
+.encabezado-admin h1{
+    margin: 0;
+}
+
+/* Tarjetas del ADMIN */
+
+.cards-admin{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:15px;
+}
+
+.card-admin{
+    flex:1;
+    min-width:180px;
+    background:white;
+    border:1px solid #d9d9d9;
+    border-radius:6px;
+    text-align:center;
+    padding:20px;
+}
+
+.icono-card{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.card-admin h2{
+    color:#13946E;
+    margin:5px 0;
+}
+
+.card-admin p{
+    color:#7a7a7a;
+    margin:0;
+}
+
+/* Boton de crear del ADMIN*/
+
+.btn-producto{
+    width:100%;
+    padding:12px;
+    background:#13946E;
+    color:white;
+    border:none;
+    border-radius:4px;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-bottom:15px;
+}
+
+.btn-producto:hover{
+    background:#0d7c5a;
+}
+
+/* Busqueda del ADMIN*/
+
+.filtros-admin{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.filtros-admin input,
+.filtros-admin select{
+    padding:12px;
+    border:1px solid #d8d8d8;
+    border-radius:4px;
+    font-size:16px;
+}
+
+.filtros-admin input{
+    flex:2;
+}
+
+.filtros-admin select{
+    flex:1;
+}
+
+/* Tabla del ADMIN */
+
+.tabla-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+thead{
+    background:#d8d8d8;
+}
+
+th{
+    padding:18px 10px;
+    text-align:left;
+    font-size:18px;
+}
+
+td{
+    padding:14px 10px;
+    border-bottom:1px solid #ddd;
+}
+
+tbody tr:hover{
+    background:#f8f8f8;
+}
+
+/* Botones del CRUD del ADMIN */
+
+.editar,
+.eliminar{
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius:4px;
+    width:36px;
+    height:36px;
+    font-size:16px;
+}
+
+.editar{
+    background:#13946E;
+}
+
+.eliminar{
+    background:#e74c3c;
+}
+
+/* Paginacion del admin */
+
+.paginacion{
+    margin-top:15px;
+}
+
+.paginacion button{
+    width:35px;
+    height:35px;
+    border:1px solid #ccc;
+    background:white;
+    border-radius:4px;
+    cursor:pointer;
+    margin-right:5px;
+}
+
+.paginacion button:hover{
+    background:#e8e8e8;
+}
+
+/* CONTACTO */
+#Contacto{
+    background: #083C2C;
+    color: #FFFFFF;
+    padding: 20px 20px;
+    text-align: center;
+    min-height: 250px;
+}
+
+.DatosCBTA{
+    width: fit-content;
+    text-align: left;
+    color: #E8E8E8;
+    font-size: 18px;
+}
+
+.DatosCBTA{
+    display: inline-block;
+    text-align: left;
+}
+
+.DatosCBTA p{
+    margin: 12px 0;
+    font-weight: 300;
+}
+/* FOOTER */
+#footer{
+    background: #052119;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.logo-principal img{
+    width: 120px;
+}
+
+.logos-gobierno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.logos-gobierno img{
+    height: 60px;
+    width: auto;
+}
+
+.texto-suave{
+    font-weight: 200; 
+    font-style: italic;
+    color: #d9d9d9;
+}
+
+
